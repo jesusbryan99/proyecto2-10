@@ -41,17 +41,6 @@ function Post({ postId, origuser, username, userId, caption, imageUrl, noLikes }
             })
     }, [postId, userId]);
 
-    // const commentShow = () => {
-    //     var element = document.getElementById('1');
-    //     var element2 = document.getElementById('2');
-    //     if (element.style.display === "none") {
-    //         element.style.display = "flex";
-    //         element2.style.display = "block";
-    //     } else {
-    //         element.style.display = "none";
-    //         element2.style.display = "none";
-    //     }
-    // }
 
     const likeHandle = (event) => {
         event.preventDefault();
