@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+
 import './HomeHeader.css';
 import SearchIcon from '@material-ui/icons/Search';
 import { Link, useHistory } from 'react-router-dom';
