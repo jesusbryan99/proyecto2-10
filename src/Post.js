@@ -30,7 +30,7 @@ function Post({ postId, origuser, username, userId, caption, imageUrl, noLikes }
             .get()
             .then(doc2 => {
                 if (doc2.data()) {
-                    if (show == 'like2') {
+                    if (show === 'like2') {
                         setShow('like2 blue');
                         setShow2('textforlike bluetextforlike')
                     } else {
@@ -55,7 +55,7 @@ function Post({ postId, origuser, username, userId, caption, imageUrl, noLikes }
 
     const likeHandle = (event) => {
         event.preventDefault();
-        if (show == 'like2') {
+        if (show === 'like2') {
             setShow('like2 blue');
             setShow2('textforlike bluetextforlike')
         } else {
@@ -69,7 +69,7 @@ function Post({ postId, origuser, username, userId, caption, imageUrl, noLikes }
             .then(docc => {
                 const data = docc.data()
                 console.log(show)
-                if (show == 'like2') {
+                if (show === 'like2') {
                     db.collection("posts")
                         .doc(postId)
                         .collection("likes")
