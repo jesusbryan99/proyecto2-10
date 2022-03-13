@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './Post.css';
 import { Avatar } from '@material-ui/core';
 import firebase from "firebase";
-
+import { db } from './firebase';
 function Post({ postId, origuser, username, userId, caption, imageUrl, noLikes }) {
 
     const [comments, setComments] = useState([]);
